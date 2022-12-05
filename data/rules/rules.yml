@@ -118,7 +118,7 @@ rules:
     - requested_slot: null
   - action: action_transaction_search
 
-- rule: Activate form for review
+- rule: Activate form for conversion
   steps:
   - intent: request_conversion
   - action: action_deactivate_loop

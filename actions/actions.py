@@ -920,15 +920,14 @@ class ActionShowCurrency(Action):
 
     def name(self) -> Text:
         """Unique identifier of the action"""
+
         return "action_show_currency"
 
     async def run(
         self, dispatcher: CollectingDispatcher, tracker: Tracker, domain: Dict
     ) -> List[EventType]:
         """Executes the custom action"""
-        # dispatcher.utter_message(response="utter_conversion_request_first_currency")
         first_currency_id = tracker.get_slot("first_currency_id")
-        # dispatcher.utter_message(response="utter_conversion_request_second_currency")
         second_currency_id = tracker.get_slot("second_currency_id")
         try:
             tools = cmc.tools_priceconversion(amount=1, symbol=first_currency_id, convert=second_currency_id)

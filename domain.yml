@@ -365,12 +365,12 @@ slots:
       - active_loop: transaction_search_form
         requested_slot: zz_confirm_form
 responses:
-  utter_conversion_request_first_currency:
-    - text: Enter first currency {first_currency_id}.
-  utter_conversion_request_second_currency:
-    - text: Enter second currency {second_currency_id}.
+  utter_ask_conversion_form_first_currency_id:
+  - text: Enter first currency.
+  utter_ask_conversion_form_second_currency_id:
+  - text: Enter second currency.
   utter_conversion_request_error:
-    - text: Извините, возникла ошибка. Пожалуйста, перепроверьте какую валюту вы хотите конвертировать.
+  - text: Извините, возникла ошибка. Пожалуйста, перепроверьте какую валюту вы хотите конвертировать.
   utter_out_of_scope:
   - text: Sorry, I'm not sure how to respond to that. Type "help" for assistance.
   utter_ask_transfer_money_form_amount-of-money:
